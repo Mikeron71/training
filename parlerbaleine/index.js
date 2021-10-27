@@ -17,3 +17,4 @@ for (i = 0; i < input.length; i++) {
   }
 }
 console.log(resultArray.join("").toUpperCase());
+console.log("coucou");
