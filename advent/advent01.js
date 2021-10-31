@@ -11,18 +11,18 @@ let jours = [1446,1893,1827,1565,1728,497,1406,1960,1986,1945,1731,1925,1550,184
 // console.log(jours.length)
 
 
-for (let i = 0; i < jours.length; i++) {
-    for (let j = 200; j >= 0; j--) {
-      let premierChiffre = jours[i]
-      let deuxiemeChiffre = jours[j]
+// for (let i = 0; i < jours.length; i++) {
+//     for (let j = 200; j >= 0; j--) {
+//       let premierChiffre = jours[i]
+//       let deuxiemeChiffre = jours[j]
     
-     if (premierChiffre + deuxiemeChiffre === 2020) {
-        console.log(premierChiffre * deuxiemeChiffre);
-         }
+//      if (premierChiffre + deuxiemeChiffre === 2020) {
+//         console.log(premierChiffre * deuxiemeChiffre);
+//          }
       
-      }
+//       }
         
-    }
+//     }
 
 
 
@@ -41,3 +41,21 @@ for (let i = 0; i < jours.length; i++) {
 
 // Of course, your expense report is much larger. Find the two entries that sum to 2020; 
 // what do you get if you multiply them together?
+
+//PART2
+// In your expense report, what is the product of the three entries that sum to 2020?
+
+for (let i = 0; i < jours.length; i++) {
+  for (let j = 0; j < jours.length; j++) {
+    for (let k = 0; k < jours.length; k++) {
+    
+    let premierChiffre = jours[i]
+    let deuxiemeChiffre = jours[j]
+    let troisiemeChiffre = jours[k]
+   
+    if (premierChiffre + deuxiemeChiffre + troisiemeChiffre === 2020) {
+      console.log(premierChiffre * deuxiemeChiffre * troisiemeChiffre);
+       }
+     }
+    }
+  }
