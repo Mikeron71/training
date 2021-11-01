@@ -54,5 +54,5 @@ const choix = ["roche", "roche", "roche", "papier", "papier", "ciseaux"];
 for (game = 0; game < choix.length; game++) {
   const element = choix[game];
 
-  playGame(element, "ciseaux");
+  playGame(element);
 }

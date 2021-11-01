@@ -1,4 +1,4 @@
-// 2-4 p: vpkpp
+// const data = `2-4 p: vpkpp
 // 6-16 b: bbbbbbbbbbbbbbbpb
 // 6-7 z: zzfzzdz
 // 4-6 q: tfzqvqcpcmqqjqzd
@@ -997,4 +997,8 @@
 // 2-3 g: gpggg
 // 7-13 d: fddcdfgvbmpdd
 // 4-5 s: rsssw
-// 2-14 c: jckbwnnlkcmvnwtj
+// 2-14 c: jckbwnnlkcmvnwtj`;
+
+//const ligne = data.split("\n");
+
+//console.log(ligne);
