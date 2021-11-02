@@ -18,8 +18,8 @@ function resoudre(ligne) {
 
   // Parametre 0
   const positions = splitLine[0].split("-");
-  const pos1 = positions[0];
-  const pos2 = positions[1];
+  const pos1 = Number(positions[0]);
+  const pos2 = Number(positions[1]);
   console.log("pos1:", pos1, "pos2:", pos2);
 
   // Parametre 1
@@ -33,18 +33,21 @@ function resoudre(ligne) {
   // Trouver le count
   //console.log("plength=", password.length);
   let count = 0;
+//console.log('lettre 1 choisie: ' + password.substring(pos1 -1,pos1 ))
+//console.log('lettre 2 choisie: ' + password.substring(pos2 -1,pos2 ))
   for (let i = 0; i < password.length; i++) {
-    if (password.substring(pos1, pos1 + 1) === letter) {
+    
+    if (password.substring(pos1 -1, pos1) === letter) {
       count++;
-      if (password.substring(pos2, pos2 + 1) === letter) {
+      if (password.substring(pos2 -1, pos2) === letter) {
         count++;
       }
     }
   }
-  //console.log(count);
+  console.log(count);
 
   // valider le count
-  if ((count = 1)) {
+  if ((count === 1)) {
     return true;
   }
 
