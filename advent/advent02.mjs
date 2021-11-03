@@ -2,9 +2,9 @@ import * as fs from "fs";
 
 const contenu = fs.readFileSync("./data02.txt", "utf-8");
 
-const contenuSplit = contenu.split("\n");
+const contenuSplit = contenu.split("\r\n");
 
-//console.table(contenuSplit);
+console.table(contenuSplit);
 
 /**
  * Resoudre valide que la ligne représente un password valide

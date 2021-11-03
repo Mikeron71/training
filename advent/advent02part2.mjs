@@ -2,7 +2,7 @@ import * as fs from "fs";
 
 const contenu = fs.readFileSync("./data02.txt", "utf-8");
 
-const contenuSplit = contenu.split("\n");
+const contenuSplit = contenu.split("\r\n");
 
 //console.table(contenuSplit);
 
@@ -32,22 +32,25 @@ function resoudre(ligne) {
 
   // Trouver le count
   //console.log("plength=", password.length);
+  let firstLetter = password.substring(pos1 - 1, pos1);
+  let secondLetter = password.substring(pos2 - 1, pos2);
+
+  // console.log("firstLetter :" + firstLetter + " secondLetter :" + secondLetter);
+
   let count = 0;
-//console.log('lettre 1 choisie: ' + password.substring(pos1 -1,pos1 ))
-//console.log('lettre 2 choisie: ' + password.substring(pos2 -1,pos2 ))
   for (let i = 0; i < password.length; i++) {
-    
-    if (password.substring(pos1 -1, pos1) === letter) {
+    if (firstLetter === letter[i]) {
       count++;
-      if (password.substring(pos2 -1, pos2) === letter) {
-        count++;
-      }
+    }
+    if (secondLetter === letter[i]) {
+      count++;
     }
   }
+
   console.log(count);
 
   // valider le count
-  if ((count === 1)) {
+  if (count === 1) {
     return true;
   }
 
