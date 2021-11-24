@@ -15,6 +15,7 @@ const result = contenuSplit.map(decodePasseport).filter(x=> x === true).length
 
 //console.log(donePasseport)
 
+<<<<<<< Updated upstream
 
 console.log('Result', result)
 
@@ -53,3 +54,16 @@ for (const i of p) {
 }
 return true
 }
+=======
+let stringpasseport = passeport0.toString();
+
+stringpasseport = stringpasseport.replaceAll(',',':')
+stringpasseport = stringpasseport.replaceAll(' ',':')
+let passeport = stringpasseport.split(':')
+console.log(passeport)
+
+
+    // for (const [key, value] of passeport.entries(passeport)) {
+    //     console.log(`${key}: ${value}`);
+    //   }
+>>>>>>> Stashed changes
