@@ -6,7 +6,20 @@
   "configurations": [
     {
       "name": "Launch Program",
+<<<<<<< HEAD
       "program": "${workspaceFolder}/advent/advent2019-02.mjs",
+=======
+      "program": "${workspaceFolder}/advent/advent04.mjs",
+      "cwd": "${workspaceFolder}/advent",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "pwa-node"
+    },
+    {
+      "name": "Launch Chrome",
+>>>>>>> master
       "request": "launch",
       "skipFiles": ["<node_internals>/**"]
     }
