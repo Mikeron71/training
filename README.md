@@ -1,4 +1,2 @@
 training
 POWPOWPOW
-
-Hey hey
